@@ -4640,10 +4640,20 @@ function saveContent() {
     timestamp: new Date().toISOString()
   };
 
-  // 編集可能な全要素の内容を保存
+  // 編集可能な全要素の内容を保存（data-editable-id を付与）
   const editableElements = {};
   document.querySelectorAll('[contenteditable="true"]').forEach((el, index) => {
-    const id = el.id || `editable-${index}`;
+    // h1とsubtitleは個別に保存済みなのでスキップ
+    if (el.tagName === 'H1' || el.classList.contains('subtitle')) {
+      return;
+    }
+
+    // data-editable-id属性を付与（既存の場合は再利用）
+    let id = el.getAttribute('data-editable-id');
+    if (!id) {
+      id = `editable-${index}`;
+      el.setAttribute('data-editable-id', id);
+    }
     editableElements[id] = el.innerHTML;
   });
 
@@ -4678,10 +4688,10 @@ function restoreContent() {
     if (h1 && contentData.title) h1.textContent = contentData.title;
     if (subtitle && contentData.subtitle) subtitle.textContent = contentData.subtitle;
 
-    // 各要素を復元
+    // 各要素を復元（data-editable-id で特定）
     if (contentData.elements) {
       Object.entries(contentData.elements).forEach(([id, content]) => {
-        const el = document.getElementById(id) || document.querySelector(`[contenteditable]:nth-of-type(${id.replace('editable-', '')})`);
+        const el = document.querySelector(`[data-editable-id="${id}"]`);
         if (el) {
           el.innerHTML = content;
         }
