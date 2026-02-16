@@ -670,8 +670,32 @@ body { padding-top: 45px; }
   </div>
 
   <div class="motivational-message" id="motivational-message">
-    さあ、最初のテーマから始めましょう！
+    最初のテーマを選んで「やる」にチェック → ステータスを更新していこう！
+  
+<div style="background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 20px; margin-top: 20px;">
+  <h3 style="margin:0 0 15px 0; font-size:1.2em;">📖 使い方ガイド</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; font-size: 0.9em; line-height: 1.8;">
+    <div>
+      <strong>1️⃣ テーマを選ぶ</strong><br>
+      各テーマをクリックして内容を確認 → 「やる」にチェックを入れる
+    </div>
+    <div>
+      <strong>2️⃣ 作業を進める</strong><br>
+      録音 → 記事化 → 公開の順にステータスを更新していく
+    </div>
+    <div>
+      <strong>3️⃣ レベルアップ</strong><br>
+      公開済みにするとカウントされ、レベルが上がる！<br>
+      <span style="opacity:0.8;">Lv1:1個 → Lv2:10個 → Lv3:30個 → Lv4:60個 → Lv5:100個</span>
+    </div>
+    <div>
+      <strong>4️⃣ 実績をアンロック</strong><br>
+      Sランク全制覇など、特定の条件で実績バッジが光る！
+    </div>
   </div>
+</div>
+
+</div>
 </div>
 
 <h1 contenteditable="true">岩田真之輔 インタビューテーマ100選</h1>
@@ -758,7 +782,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-01-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-01-do" onchange="updateStatusManagement()">
     <label for="topic-01-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-01-status" onchange="updateStatusManagement()">
@@ -792,7 +816,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-02-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-02-do" onchange="updateStatusManagement()">
     <label for="topic-02-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-02-status" onchange="updateStatusManagement()">
@@ -825,7 +849,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-03-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-03-do" onchange="updateStatusManagement()">
     <label for="topic-03-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-03-status" onchange="updateStatusManagement()">
@@ -859,7 +883,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-04-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-04-do" onchange="updateStatusManagement()">
     <label for="topic-04-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-04-status" onchange="updateStatusManagement()">
@@ -893,7 +917,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-05-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-05-do" onchange="updateStatusManagement()">
     <label for="topic-05-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-05-status" onchange="updateStatusManagement()">
@@ -926,7 +950,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-06-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-06-do" onchange="updateStatusManagement()">
     <label for="topic-06-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-06-status" onchange="updateStatusManagement()">
@@ -960,7 +984,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-07-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-07-do" onchange="updateStatusManagement()">
     <label for="topic-07-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-07-status" onchange="updateStatusManagement()">
@@ -993,7 +1017,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-08-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-08-do" onchange="updateStatusManagement()">
     <label for="topic-08-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-08-status" onchange="updateStatusManagement()">
@@ -1027,7 +1051,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-09-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-09-do" onchange="updateStatusManagement()">
     <label for="topic-09-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-09-status" onchange="updateStatusManagement()">
@@ -1060,7 +1084,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-10-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-10-do" onchange="updateStatusManagement()">
     <label for="topic-10-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-10-status" onchange="updateStatusManagement()">
@@ -1094,7 +1118,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-11-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-11-do" onchange="updateStatusManagement()">
     <label for="topic-11-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-11-status" onchange="updateStatusManagement()">
@@ -1127,7 +1151,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-12-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-12-do" onchange="updateStatusManagement()">
     <label for="topic-12-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-12-status" onchange="updateStatusManagement()">
@@ -1160,7 +1184,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-13-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-13-do" onchange="updateStatusManagement()">
     <label for="topic-13-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-13-status" onchange="updateStatusManagement()">
@@ -1193,7 +1217,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-14-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-14-do" onchange="updateStatusManagement()">
     <label for="topic-14-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-14-status" onchange="updateStatusManagement()">
@@ -1227,7 +1251,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-15-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-15-do" onchange="updateStatusManagement()">
     <label for="topic-15-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-15-status" onchange="updateStatusManagement()">
@@ -1268,7 +1292,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-16-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-16-do" onchange="updateStatusManagement()">
     <label for="topic-16-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-16-status" onchange="updateStatusManagement()">
@@ -1301,7 +1325,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-17-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-17-do" onchange="updateStatusManagement()">
     <label for="topic-17-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-17-status" onchange="updateStatusManagement()">
@@ -1334,7 +1358,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-18-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-18-do" onchange="updateStatusManagement()">
     <label for="topic-18-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-18-status" onchange="updateStatusManagement()">
@@ -1366,7 +1390,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-19-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-19-do" onchange="updateStatusManagement()">
     <label for="topic-19-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-19-status" onchange="updateStatusManagement()">
@@ -1398,7 +1422,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-20-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-20-do" onchange="updateStatusManagement()">
     <label for="topic-20-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-20-status" onchange="updateStatusManagement()">
@@ -1430,7 +1454,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-21-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-21-do" onchange="updateStatusManagement()">
     <label for="topic-21-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-21-status" onchange="updateStatusManagement()">
@@ -1462,7 +1486,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-22-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-22-do" onchange="updateStatusManagement()">
     <label for="topic-22-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-22-status" onchange="updateStatusManagement()">
@@ -1495,7 +1519,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-23-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-23-do" onchange="updateStatusManagement()">
     <label for="topic-23-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-23-status" onchange="updateStatusManagement()">
@@ -1527,7 +1551,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-24-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-24-do" onchange="updateStatusManagement()">
     <label for="topic-24-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-24-status" onchange="updateStatusManagement()">
@@ -1559,7 +1583,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-25-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-25-do" onchange="updateStatusManagement()">
     <label for="topic-25-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-25-status" onchange="updateStatusManagement()">
@@ -1591,7 +1615,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-26-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-26-do" onchange="updateStatusManagement()">
     <label for="topic-26-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-26-status" onchange="updateStatusManagement()">
@@ -1624,7 +1648,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-27-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-27-do" onchange="updateStatusManagement()">
     <label for="topic-27-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-27-status" onchange="updateStatusManagement()">
@@ -1656,7 +1680,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-28-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-28-do" onchange="updateStatusManagement()">
     <label for="topic-28-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-28-status" onchange="updateStatusManagement()">
@@ -1688,7 +1712,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-29-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-29-do" onchange="updateStatusManagement()">
     <label for="topic-29-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-29-status" onchange="updateStatusManagement()">
@@ -1721,7 +1745,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-30-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-30-do" onchange="updateStatusManagement()">
     <label for="topic-30-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-30-status" onchange="updateStatusManagement()">
@@ -1753,7 +1777,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-31-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-31-do" onchange="updateStatusManagement()">
     <label for="topic-31-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-31-status" onchange="updateStatusManagement()">
@@ -1786,7 +1810,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-32-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-32-do" onchange="updateStatusManagement()">
     <label for="topic-32-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-32-status" onchange="updateStatusManagement()">
@@ -1818,7 +1842,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-33-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-33-do" onchange="updateStatusManagement()">
     <label for="topic-33-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-33-status" onchange="updateStatusManagement()">
@@ -1850,7 +1874,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-34-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-34-do" onchange="updateStatusManagement()">
     <label for="topic-34-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-34-status" onchange="updateStatusManagement()">
@@ -1882,7 +1906,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-35-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-35-do" onchange="updateStatusManagement()">
     <label for="topic-35-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-35-status" onchange="updateStatusManagement()">
@@ -1914,7 +1938,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-36-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-36-do" onchange="updateStatusManagement()">
     <label for="topic-36-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-36-status" onchange="updateStatusManagement()">
@@ -1946,7 +1970,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-37-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-37-do" onchange="updateStatusManagement()">
     <label for="topic-37-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-37-status" onchange="updateStatusManagement()">
@@ -1978,7 +2002,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-38-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-38-do" onchange="updateStatusManagement()">
     <label for="topic-38-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-38-status" onchange="updateStatusManagement()">
@@ -2010,7 +2034,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-39-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-39-do" onchange="updateStatusManagement()">
     <label for="topic-39-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-39-status" onchange="updateStatusManagement()">
@@ -2042,7 +2066,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-40-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-40-do" onchange="updateStatusManagement()">
     <label for="topic-40-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-40-status" onchange="updateStatusManagement()">
@@ -2083,7 +2107,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-41-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-41-do" onchange="updateStatusManagement()">
     <label for="topic-41-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-41-status" onchange="updateStatusManagement()">
@@ -2115,7 +2139,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-42-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-42-do" onchange="updateStatusManagement()">
     <label for="topic-42-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-42-status" onchange="updateStatusManagement()">
@@ -2147,7 +2171,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-43-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-43-do" onchange="updateStatusManagement()">
     <label for="topic-43-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-43-status" onchange="updateStatusManagement()">
@@ -2179,7 +2203,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-44-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-44-do" onchange="updateStatusManagement()">
     <label for="topic-44-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-44-status" onchange="updateStatusManagement()">
@@ -2211,7 +2235,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-45-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-45-do" onchange="updateStatusManagement()">
     <label for="topic-45-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-45-status" onchange="updateStatusManagement()">
@@ -2243,7 +2267,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-46-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-46-do" onchange="updateStatusManagement()">
     <label for="topic-46-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-46-status" onchange="updateStatusManagement()">
@@ -2275,7 +2299,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-47-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-47-do" onchange="updateStatusManagement()">
     <label for="topic-47-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-47-status" onchange="updateStatusManagement()">
@@ -2307,7 +2331,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-48-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-48-do" onchange="updateStatusManagement()">
     <label for="topic-48-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-48-status" onchange="updateStatusManagement()">
@@ -2339,7 +2363,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-49-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-49-do" onchange="updateStatusManagement()">
     <label for="topic-49-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-49-status" onchange="updateStatusManagement()">
@@ -2371,7 +2395,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-50-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-50-do" onchange="updateStatusManagement()">
     <label for="topic-50-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-50-status" onchange="updateStatusManagement()">
@@ -2403,7 +2427,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-51-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-51-do" onchange="updateStatusManagement()">
     <label for="topic-51-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-51-status" onchange="updateStatusManagement()">
@@ -2435,7 +2459,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-52-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-52-do" onchange="updateStatusManagement()">
     <label for="topic-52-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-52-status" onchange="updateStatusManagement()">
@@ -2467,7 +2491,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-53-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-53-do" onchange="updateStatusManagement()">
     <label for="topic-53-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-53-status" onchange="updateStatusManagement()">
@@ -2499,7 +2523,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-54-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-54-do" onchange="updateStatusManagement()">
     <label for="topic-54-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-54-status" onchange="updateStatusManagement()">
@@ -2531,7 +2555,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-55-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-55-do" onchange="updateStatusManagement()">
     <label for="topic-55-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-55-status" onchange="updateStatusManagement()">
@@ -2563,7 +2587,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-56-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-56-do" onchange="updateStatusManagement()">
     <label for="topic-56-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-56-status" onchange="updateStatusManagement()">
@@ -2595,7 +2619,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-57-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-57-do" onchange="updateStatusManagement()">
     <label for="topic-57-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-57-status" onchange="updateStatusManagement()">
@@ -2627,7 +2651,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-58-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-58-do" onchange="updateStatusManagement()">
     <label for="topic-58-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-58-status" onchange="updateStatusManagement()">
@@ -2659,7 +2683,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-59-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-59-do" onchange="updateStatusManagement()">
     <label for="topic-59-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-59-status" onchange="updateStatusManagement()">
@@ -2691,7 +2715,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-60-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-60-do" onchange="updateStatusManagement()">
     <label for="topic-60-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-60-status" onchange="updateStatusManagement()">
@@ -2723,7 +2747,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-61-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-61-do" onchange="updateStatusManagement()">
     <label for="topic-61-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-61-status" onchange="updateStatusManagement()">
@@ -2755,7 +2779,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-62-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-62-do" onchange="updateStatusManagement()">
     <label for="topic-62-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-62-status" onchange="updateStatusManagement()">
@@ -2787,7 +2811,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-63-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-63-do" onchange="updateStatusManagement()">
     <label for="topic-63-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-63-status" onchange="updateStatusManagement()">
@@ -2819,7 +2843,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-64-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-64-do" onchange="updateStatusManagement()">
     <label for="topic-64-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-64-status" onchange="updateStatusManagement()">
@@ -2851,7 +2875,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-65-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-65-do" onchange="updateStatusManagement()">
     <label for="topic-65-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-65-status" onchange="updateStatusManagement()">
@@ -2883,7 +2907,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-66-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-66-do" onchange="updateStatusManagement()">
     <label for="topic-66-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-66-status" onchange="updateStatusManagement()">
@@ -2915,7 +2939,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-67-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-67-do" onchange="updateStatusManagement()">
     <label for="topic-67-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-67-status" onchange="updateStatusManagement()">
@@ -2947,7 +2971,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-68-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-68-do" onchange="updateStatusManagement()">
     <label for="topic-68-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-68-status" onchange="updateStatusManagement()">
@@ -2979,7 +3003,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-69-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-69-do" onchange="updateStatusManagement()">
     <label for="topic-69-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-69-status" onchange="updateStatusManagement()">
@@ -3011,7 +3035,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-70-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-70-do" onchange="updateStatusManagement()">
     <label for="topic-70-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-70-status" onchange="updateStatusManagement()">
@@ -3051,7 +3075,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-71-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-71-do" onchange="updateStatusManagement()">
     <label for="topic-71-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-71-status" onchange="updateStatusManagement()">
@@ -3083,7 +3107,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-72-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-72-do" onchange="updateStatusManagement()">
     <label for="topic-72-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-72-status" onchange="updateStatusManagement()">
@@ -3115,7 +3139,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-73-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-73-do" onchange="updateStatusManagement()">
     <label for="topic-73-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-73-status" onchange="updateStatusManagement()">
@@ -3147,7 +3171,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-74-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-74-do" onchange="updateStatusManagement()">
     <label for="topic-74-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-74-status" onchange="updateStatusManagement()">
@@ -3179,7 +3203,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-75-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-75-do" onchange="updateStatusManagement()">
     <label for="topic-75-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-75-status" onchange="updateStatusManagement()">
@@ -3211,7 +3235,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-76-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-76-do" onchange="updateStatusManagement()">
     <label for="topic-76-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-76-status" onchange="updateStatusManagement()">
@@ -3243,7 +3267,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-77-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-77-do" onchange="updateStatusManagement()">
     <label for="topic-77-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-77-status" onchange="updateStatusManagement()">
@@ -3275,7 +3299,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-78-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-78-do" onchange="updateStatusManagement()">
     <label for="topic-78-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-78-status" onchange="updateStatusManagement()">
@@ -3307,7 +3331,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-79-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-79-do" onchange="updateStatusManagement()">
     <label for="topic-79-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-79-status" onchange="updateStatusManagement()">
@@ -3339,7 +3363,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-80-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-80-do" onchange="updateStatusManagement()">
     <label for="topic-80-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-80-status" onchange="updateStatusManagement()">
@@ -3371,7 +3395,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-81-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-81-do" onchange="updateStatusManagement()">
     <label for="topic-81-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-81-status" onchange="updateStatusManagement()">
@@ -3403,7 +3427,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-82-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-82-do" onchange="updateStatusManagement()">
     <label for="topic-82-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-82-status" onchange="updateStatusManagement()">
@@ -3435,7 +3459,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-83-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-83-do" onchange="updateStatusManagement()">
     <label for="topic-83-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-83-status" onchange="updateStatusManagement()">
@@ -3467,7 +3491,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-84-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-84-do" onchange="updateStatusManagement()">
     <label for="topic-84-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-84-status" onchange="updateStatusManagement()">
@@ -3499,7 +3523,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-85-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-85-do" onchange="updateStatusManagement()">
     <label for="topic-85-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-85-status" onchange="updateStatusManagement()">
@@ -3531,7 +3555,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-86-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-86-do" onchange="updateStatusManagement()">
     <label for="topic-86-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-86-status" onchange="updateStatusManagement()">
@@ -3563,7 +3587,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-87-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-87-do" onchange="updateStatusManagement()">
     <label for="topic-87-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-87-status" onchange="updateStatusManagement()">
@@ -3595,7 +3619,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-88-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-88-do" onchange="updateStatusManagement()">
     <label for="topic-88-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-88-status" onchange="updateStatusManagement()">
@@ -3627,7 +3651,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-89-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-89-do" onchange="updateStatusManagement()">
     <label for="topic-89-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-89-status" onchange="updateStatusManagement()">
@@ -3659,7 +3683,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-90-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-90-do" onchange="updateStatusManagement()">
     <label for="topic-90-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-90-status" onchange="updateStatusManagement()">
@@ -3691,7 +3715,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-91-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-91-do" onchange="updateStatusManagement()">
     <label for="topic-91-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-91-status" onchange="updateStatusManagement()">
@@ -3723,7 +3747,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-92-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-92-do" onchange="updateStatusManagement()">
     <label for="topic-92-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-92-status" onchange="updateStatusManagement()">
@@ -3755,7 +3779,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-93-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-93-do" onchange="updateStatusManagement()">
     <label for="topic-93-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-93-status" onchange="updateStatusManagement()">
@@ -3787,7 +3811,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-94-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-94-do" onchange="updateStatusManagement()">
     <label for="topic-94-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-94-status" onchange="updateStatusManagement()">
@@ -3819,7 +3843,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-95-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-95-do" onchange="updateStatusManagement()">
     <label for="topic-95-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-95-status" onchange="updateStatusManagement()">
@@ -3851,7 +3875,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-96-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-96-do" onchange="updateStatusManagement()">
     <label for="topic-96-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-96-status" onchange="updateStatusManagement()">
@@ -3883,7 +3907,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-97-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-97-do" onchange="updateStatusManagement()">
     <label for="topic-97-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-97-status" onchange="updateStatusManagement()">
@@ -3915,7 +3939,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-98-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-98-do" onchange="updateStatusManagement()">
     <label for="topic-98-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-98-status" onchange="updateStatusManagement()">
@@ -3947,7 +3971,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-99-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-99-do" onchange="updateStatusManagement()">
     <label for="topic-99-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-99-status" onchange="updateStatusManagement()">
@@ -3979,7 +4003,7 @@ body { padding-top: 45px; }
 <div class="topic-body">
 <div class="status-controls">
   <div class="do-checkbox-wrapper">
-    <input type="checkbox" id="topic-100-do" onchange="updateStatusManagement()" checked>
+    <input type="checkbox" id="topic-100-do" onchange="updateStatusManagement()">
     <label for="topic-100-do" class="status-label">やる</label>
   </div>
   <select class="status-select status-not-started" id="topic-100-status" onchange="updateStatusManagement()">
@@ -4142,9 +4166,26 @@ function saveProgress(data) {
 function updateProgress() {
   const progress = loadProgress();
 
-  // 全チェックボックスの状態を取得
+  // ステータスが「公開済み」のものをカウント
+  document.querySelectorAll('select[id$="-status"]').forEach(sel => {
+    const topicId = sel.id.replace('-status', '');
+    const isPublished = sel.value === 'published';
+    progress.completed[topicId] = isPublished;
+
+    // 対応するチェックボックスも連動
+    const cb = document.getElementById(topicId);
+    if (cb) {
+      cb.checked = isPublished;
+    }
+  });
+
+  // チェックボックスの状態も保存（後方互換性のため）
   document.querySelectorAll('input[type="checkbox"][id^="topic-"]').forEach(cb => {
-    progress.completed[cb.id] = cb.checked;
+    if (!cb.id.includes('-do') && !cb.id.includes('-status')) {
+      const topicId = cb.id;
+      const statusSelect = document.getElementById(topicId + '-status');
+      if (statusSelect && statusSelect.value === 'published') {
+        progress.completed[topicId] = true;
     // カードの見た目を更新
     const card = cb.closest('.topic-card');
     if (card) {
@@ -4236,7 +4277,7 @@ function renderProgress(progress) {
 
   // モチベーションメッセージ
   const messages = [
-    [0, 'さあ、最初のテーマから始めましょう！ 🚀'],
+    [0, '最初のテーマを選んで「やる」にチェック → ステータスを更新していこう！ 🚀'],
     [1, 'おめでとうございます！最初の一歩を踏み出しました！ 🎉'],
     [10, 'すごい！10テーマ達成！調子が出てきましたね！ 💪'],
     [25, '4分の1達成！このペースで進めましょう！ ⭐'],
