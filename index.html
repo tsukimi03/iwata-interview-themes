@@ -640,7 +640,7 @@ body { padding-top: 45px; }
   <span class="toolbar-note" id="toolbar-note">📖 閲覧モード</span>
   <div class="toolbar-buttons">
     <button class="btn-edit" id="btn-edit" onclick="toggleEditMode()">編集</button>
-    <button class="btn-save" id="btn-save" onclick="saveContent()" style="display:none;">HTML保存</button>
+    <button class="btn-save" id="btn-save" onclick="saveContent()">HTML保存</button>
     <button class="btn-pdf" onclick="saveAsPDF()">PDF保存</button>
     <button class="btn-github" onclick="openGitHubEdit()" style="background:#333; color:#fff; border:none; padding:8px 16px; border-radius:6px; cursor:pointer; font-size:13px;">GitHubで編集</button>
     <button class="btn-reset" onclick="resetAllProgress()" style="background:#ef4444; color:#fff; border:none; padding:8px 16px; border-radius:6px; cursor:pointer; font-size:13px; margin-left:auto;">リセット</button>
@@ -4599,7 +4599,6 @@ function toggleEditMode() {
     body.classList.add('edit-mode');
     btn.textContent = '編集終了';
     btn.classList.add('active');
-    saveBtn.style.display = 'inline-block';
     note.textContent = '✏️ 編集モード（テキストをクリックして編集）';
     enableContentEditable();
   } else {
@@ -4607,7 +4606,6 @@ function toggleEditMode() {
     body.classList.remove('edit-mode');
     btn.textContent = '編集';
     btn.classList.remove('active');
-    saveBtn.style.display = 'none';
     note.textContent = '📖 閲覧モード';
     disableContentEditable();
   }
