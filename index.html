@@ -602,6 +602,7 @@ body { padding-top: 45px; }
   <div class="toolbar-buttons">
     <button class="btn-html" onclick="saveAsHTML()">HTML保存</button>
     <button class="btn-pdf" onclick="saveAsPDF()">PDF保存</button>
+    <button class="btn-reset" onclick="resetAllProgress()" style="background:#ef4444; color:#fff; border:none; padding:8px 16px; border-radius:6px; cursor:pointer; font-size:13px; margin-left:auto;">リセット</button>
   </div>
 </div>
 
@@ -4140,6 +4141,21 @@ function saveAsPDF() {
 }
 
 
+
+// ========== 初期化時のデータ検証 ==========
+(function validateInitialData() {
+  const progress = loadProgress();
+  const completedCount = Object.values(progress.completed).filter(v => v).length;
+
+  // 完了数が90以上の場合（異常値）、自動リセット
+  if (completedCount >= 90) {
+    console.warn('異常なデータを検出したため、リセットします');
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(STATUS_STORAGE_KEY);
+    location.reload();
+  }
+})();
+
 // ========== ゲーミフィケーション機能 ==========
 const STORAGE_KEY = 'iwata-interview-progress';
 const PRIORITIES = {s: 15, a: 25, b: 30, c: 30};
@@ -4166,33 +4182,26 @@ function saveProgress(data) {
 function updateProgress() {
   const progress = loadProgress();
 
-  // ステータスが「公開済み」のものをカウント
+  // 「公開済み」ステータスのみを完了としてカウント
+  progress.completed = {};
   document.querySelectorAll('select[id$="-status"]').forEach(sel => {
     const topicId = sel.id.replace('-status', '');
     const isPublished = sel.value === 'published';
     progress.completed[topicId] = isPublished;
 
-    // 対応するチェックボックスも連動
+    // 対応するチェックボックスも連動（表示用）
     const cb = document.getElementById(topicId);
     if (cb) {
       cb.checked = isPublished;
-    }
-  });
 
-  // チェックボックスの状態も保存（後方互換性のため）
-  document.querySelectorAll('input[type="checkbox"][id^="topic-"]').forEach(cb => {
-    if (!cb.id.includes('-do') && !cb.id.includes('-status')) {
-      const topicId = cb.id;
-      const statusSelect = document.getElementById(topicId + '-status');
-      if (statusSelect && statusSelect.value === 'published') {
-        progress.completed[topicId] = true;
-    // カードの見た目を更新
-    const card = cb.closest('.topic-card');
-    if (card) {
-      if (cb.checked) {
-        card.classList.add('completed');
-      } else {
-        card.classList.remove('completed');
+      // カードの見た目を更新
+      const card = cb.closest('.topic-card');
+      if (card) {
+        if (isPublished) {
+          card.classList.add('completed');
+        } else {
+          card.classList.remove('completed');
+        }
       }
     }
   });
@@ -4216,7 +4225,20 @@ function updateProgress() {
 
 // 進捗の表示
 function renderProgress(progress) {
-  const completed = Object.values(progress.completed).filter(v => v).length;
+  // 「公開済み」のステータスを持つテーマのみをカウント
+  let completed = 0;
+  document.querySelectorAll('select[id$="-status"]').forEach(sel => {
+    if (sel.value === 'published') {
+      completed++;
+    }
+  });
+
+  // progressオブジェクトとの整合性チェック
+  const progressCompleted = Object.values(progress.completed).filter(v => v).length;
+  if (progressCompleted !== completed) {
+    // 不整合がある場合は実際のステータスを優先
+    console.log('進捗データを再計算:', completed);
+  }
   const total = 100;
   const percentage = Math.round((completed / total) * 100);
 
@@ -4484,6 +4506,39 @@ document.addEventListener('DOMContentLoaded', function() {
     updateStatusManagement();
   }, 100);
 });
+
+
+// ========== リセット機能 ==========
+function resetAllProgress() {
+  if (confirm('全ての進捗データをリセットしますか？\n（この操作は取り消せません）')) {
+    // ローカルストレージをクリア
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(STATUS_STORAGE_KEY);
+
+    // 全チェックボックスをOFF
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      cb.checked = false;
+    });
+
+    // 全ステータスを「未着手」に
+    document.querySelectorAll('select[id$="-status"]').forEach(sel => {
+      sel.value = 'not-started';
+      sel.className = 'status-select status-not-started';
+    });
+
+    // 全カードから完了・スキップクラスを削除
+    document.querySelectorAll('.topic-card').forEach(card => {
+      card.classList.remove('completed', 'skipped');
+    });
+
+    // 進捗を再計算
+    updateProgress();
+    updateStatusManagement();
+
+    alert('リセットしました！');
+    location.reload();
+  }
+}
 
 </script>
 </body>
